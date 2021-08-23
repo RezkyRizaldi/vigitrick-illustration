@@ -1,0 +1,35 @@
+@font-face {
+    font-family: blank-river;
+    src: url("../fonts/Blank-River.ttf");
+}
+
+// Body
+$body-bg: #f8fafc;
+// Typography
+$ff_poppins: "Poppins",
+sans-serif;
+$ff_rubik: "Rubik",
+sans-serif;
+$ff_blank_river: blank-river,
+sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$main: #69d5c7;
+$secondary: #59b7a7;
+// Font Awesome
+$fa-font-path: "../webfonts";
+// Root
+$root: ( "typography": ( "ff_rubik": $ff_rubik, "ff_poppins": $ff_poppins, "ff_blank_river": $ff_blank_river, "font-size-base": $font-size-base, "line-height-base": $line-height-base, ),
+"color": ( "body-bg": $body-bg, "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "main": $main, "secondary": $secondary, ),
+);

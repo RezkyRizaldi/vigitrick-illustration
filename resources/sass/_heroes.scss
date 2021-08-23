@@ -1,0 +1,26 @@
+#heroes {
+    #carousel {
+        .carousel-indicators [data-bs-target] {
+            background-color: $main;
+        }
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 400px;
+                }
+                .container {
+                    .position-absolute {
+                        top: 35%;
+                        z-index: 10000;
+                        .carousel_content {
+                            h1,
+                            p {
+                                text-shadow: 2px 2px #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
