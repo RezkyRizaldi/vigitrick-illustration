@@ -27,8 +27,8 @@
 	<meta name="author" content="Vigitrick, vigitrick@gmail.com" />
 	<meta name="designer" content="Vigitrick, vigitrick@gmail.com" />
 	<meta name="reply-to" content="vigitrick@gmail.com" />
-	{{-- <meta name="url" content="https://kadinindonesia.or.id" /> --}}
-	{{-- <meta name="identifier-URL" content="https://kadinindonesia.or.id" /> --}}
+	<meta name="url" content="https://vigitrick-illustration.herokuapp.com" />
+	<meta name="identifier-URL" content="https://vigitrick-illustration.herokuapp.com" />
 	<meta name="directory" content="submission" />
 	<meta name="pagename" content="{{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
 	<meta name="revisit-after" content="1 day" />
@@ -46,7 +46,7 @@
 
 	{{-- Open Graph/Facebook --}}
 	<meta property="og:type" content="website" />
-	{{-- <meta property="og:url" content="https://kadinindonesia.or.id" /> --}}
+	<meta property="og:url" content="https://vigitrick-illustration.herokuapp.com" />
 	<meta property="og:title" content="{{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
 	<meta property="og:image" content="{{ asset('assets/img/favicon/logo_summary.jpg') }}" />
 	<meta property="og:description" content="Vigitrick Commission Website and Artwork Gallery" />
@@ -63,7 +63,7 @@
 
 	{{-- Twitter --}}
 	<meta property="twitter:card" content="summary_large_image" />
-	{{-- <meta property="twitter:url" content="https://kadinindonesia.or.id" /> --}}
+	<meta property="twitter:url" content="https://vigitrick-illustration.herokuapp.com" />
 	<meta property="twitter:title" content="{{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
 	<meta property="twitter:description" content="Vigitrick Commission Website and Artwork Gallery" />
 	<meta property="twitter:image" content="{{ asset('assets/img/favicon/logo_summary.jpg') }}" />
@@ -104,7 +104,7 @@
 	<meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0, Transition=12)" />
 	<meta http-equiv="cleartype" content="on" />
 	<meta name="mssmarttagspreventparsing" content="true" />
-	{{-- <meta name="msapplication-starturl" content="https://kadinindonesia.or.id" /> --}}
+	<meta name="msapplication-starturl" content="https://vigitrick-illustration.herokuapp.com" />
 	<meta name="msapplication-window" content="width=800;height=600" />
 	<meta name="msapplication-navbutton-color" content="blue" />
 	<meta name="application-name" content="{{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
@@ -129,7 +129,7 @@
 	{{--  Favicon  --}}
 	<link rel="manifest" href="{{ asset('site.webmanifest') }}" />
 	<link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#0C0A83" />
-	{{-- <link rel="author" href="https://authenticguards.com" /> --}}
+	<link rel="author" href="https://rezkyrizaldi.herokuapp.com" />
 	<link rel="fluid-icon" href="{{ asset('assets/img/favicon/logo_summary.jpg') }}" type="image/jpeg" />
 	<link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
