@@ -19,7 +19,7 @@
 					<a class="nav-link fw_600 fs-5" href="#pricing" title="Pricing">Pricing</a>
 				</li>
 			</ul>
-			<hr class="bg-light mx-auto d-block d-lg-none" style="height: 4px !important" width="90%" />
+			<hr class="bg-light mx-auto d-block d-lg-none" width="90%" />
 			<div class="d-flex align-items-center d-block d-lg-none">
 				<div>
 					<h6 class="mb-0 me-2 text-light text-uppercase">Follow me on</h6>

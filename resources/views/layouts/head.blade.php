@@ -1,8 +1,12 @@
 <head>
 	{{--  Required Meta Tags --}}
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 24 Aug 2021 06:04:44 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
 
 	{{-- CSRF --}}
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -109,7 +113,6 @@
 	<meta name="msapplication-navbutton-color" content="blue" />
 	<meta name="application-name" content="{{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
 	<meta name="msappliaction-tooltip" content="{{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
-	<meta name="theme-color" content="#FFFFFF" />
 	<meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
 	<meta name="msapplication-config" content="{{ asset('browserconfig.xml') }}" />
 
