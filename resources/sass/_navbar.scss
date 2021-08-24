@@ -1,0 +1,20 @@
+#navbar {
+    .navbar-brand {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+// Below 576px
+@include mq("phablet", "max") {
+    #navbar {
+        .navbar-brand {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

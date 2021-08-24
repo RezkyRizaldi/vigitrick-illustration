@@ -2,7 +2,7 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark shadow-lg bg_main">
 	<div class="container">
 		<a class="navbar-brand" href="{{ route('home') }}">
-			<img src="{{ asset('assets/img/logo.png') }}" alt="Logo {{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" width="50" height="50" />
+			<img src="{{ asset('assets/img/logo.png') }}" alt="Logo {{ str_replace('_', ' ', config('app.name', 'Vigitrick Illustration')) }}" />
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

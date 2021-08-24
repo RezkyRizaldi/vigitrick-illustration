@@ -1,0 +1,41 @@
+#footer {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+// Below 576px
+@include mq("phablet", "max") {
+    #footer {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Below 480px
+@include mq("phone-wide", "max") {
+    #footer {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// Below 425px
+@include mq("phone-large", "max") {
+    #footer {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+// Below 375px
+@include mq("phone-medium", "max") {
+    #footer {
+        p {
+            font-size: 0.6rem;
+        }
+    }
+}

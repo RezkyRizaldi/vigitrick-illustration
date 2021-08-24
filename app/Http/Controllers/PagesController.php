@@ -82,42 +82,42 @@ class PagesController extends Controller
 			[
 				"data_item" => "category5",
 				"img" => "gallery15",
-				"title" => "Olivia Commission",
+				"title" => "Nekuma Commission",
 			],
 			[
 				"data_item" => "category1",
 				"img" => "gallery16",
-				"title" => "Onigiri Commission",
+				"title" => "Olivia Commission",
 			],
 			[
 				"data_item" => "category2",
 				"img" => "gallery17",
-				"title" => "Rakun Illustration",
+				"title" => "Onigiri Comission",
 			],
 			[
 				"data_item" => "category3",
 				"img" => "gallery18",
-				"title" => "Reina Commission",
+				"title" => "Rakun Illustration",
 			],
 			[
 				"data_item" => "category4",
 				"img" => "gallery19",
-				"title" => "RekaGantenk + Graffiti",
+				"title" => "Reina Commission",
 			],
 			[
 				"data_item" => "category5",
 				"img" => "gallery20",
-				"title" => "Ryuuki Tatsuya Final",
+				"title" => "RekaGantenk + Graffiti",
 			],
 			[
 				"data_item" => "category1",
 				"img" => "gallery21",
-				"title" => "Serena Shinju Fanart",
+				"title" => "Ryuuki Tatsuya Final",
 			],
 			[
 				"data_item" => "category2",
 				"img" => "gallery22",
-				"title" => "Silopunk Commission",
+				"title" => "Serena Shinju Fanart",
 			],
 			[
 				"data_item" => "category3",
