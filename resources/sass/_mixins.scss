@@ -1,113 +1,115 @@
 $path-rel: "..";
 @mixin background($custom: ()) {
-    $options: map-merge( ( "color": null, "image": null, "image-path": null, "size": null, "repeat": no-repeat, "position": null, ), $custom);
-    @if map-get($options, "color") and map-get($options, "image") {
-        background: {
-            color: map-get($options, "color");
-            image: url("#{$path-rel}/img/#{map-get($options, 'image-path')}/#{map-get($options, 'image')}");
-            size: map-get($options, "size");
-            repeat: map-get($options, "repeat");
-            position: map-get($options, "position");
-        }
-    }
-    @else if map-get($options,
-    "image") {
-        background: {
-            image: url("#{$path-rel}/img/#{map-get($options, 'image-path')}/#{map-get($options, 'image')}");
-            size: map-get($options, "size");
-            repeat: map-get($options, "repeat");
-            position: map-get($options, "position");
-        }
-    }
+	$options: map-merge(
+		(
+			"color": null,
+			"image": null,
+			"image-path": null,
+			"size": null,
+			"repeat": no-repeat,
+			"position": null,
+		),
+		$custom
+	);
+	@if map-get($options, "color") and map-get($options, "image") {
+		background: {
+			color: map-get($options, "color");
+			image: url("#{$path-rel}/img/#{map-get($options, 'image-path')}/#{map-get($options, 'image')}");
+			size: map-get($options, "size");
+			repeat: map-get($options, "repeat");
+			position: map-get($options, "position");
+		}
+	} @else if map-get($options, "image") {
+		background: {
+			image: url("#{$path-rel}/img/#{map-get($options, 'image-path')}/#{map-get($options, 'image')}");
+			size: map-get($options, "size");
+			repeat: map-get($options, "repeat");
+			position: map-get($options, "position");
+		}
+	}
 }
 
-@mixin utils($prop,
-$value) {
-    @if $prop=="bg" {
-        .#{$prop}_#{$value} {
-            background-color: #{"var(--"}#{$value}#{")"};
-        }
-    }
-    @else if $prop=="text" {
-        .#{$prop}_#{$value} {
-            color: #{"var(--"}#{$value}#{")"};
-        }
-    }
-    @else if $prop=="ff" {
-        .#{$prop}_#{$value} {
-            font-family: #{"var(--"}#{$prop}#{"_"}#{$value}#{")"};
-        }
-    }
-    @else if $prop=="fw" {
-        .#{$prop}_#{$value} {
-            font-weight: #{$value};
-        }
-    }
+@mixin utils($prop, $value) {
+	@if $prop== "bg" {
+		.#{$prop}_#{$value} {
+			background-color: #{"var(--"}#{$value}#{")"};
+		}
+	} @else if $prop== "text" {
+		.#{$prop}_#{$value} {
+			color: #{"var(--"}#{$value}#{")"};
+		}
+	} @else if $prop== "ff" {
+		.#{$prop}_#{$value} {
+			font-family: #{"var(--"}#{$prop}#{"_"}#{$value}#{")"};
+		}
+	} @else if $prop== "fw" {
+		.#{$prop}_#{$value} {
+			font-weight: #{$value};
+		}
+	}
 }
 
 @mixin input-placeholder() {
-    &::placeholder,
-    &::-webkit-input-placeholder,
-    &::-moz-placeholder,
-    &:-ms-input-placeholder,
-    &:-moz-placeholder,
-    &.placeholder {
-        @content;
-    }
+	&::placeholder,
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&:-ms-input-placeholder,
+	&:-moz-placeholder,
+	&.placeholder {
+		@content;
+	}
 }
 
-$breakpoints: ( "phone-small": 320px,
-"phone-medium": 375px,
-"phone": 400px,
-"iphone": 414px,
-"phone-large": 425px,
-"phone-wide": 480px,
-"phablet": 576px,
-"tablet-small": 640px,
-"tablet": 768px,
-"laptop": 992px,
-"tablet-wide": 1024px,
-"desktop": 1200px,
-"desktop-wide": 1440px,
+$breakpoints: (
+	"phone-small": 320px,
+	"phone-medium": 375px,
+	"phone": 400px,
+	"iphone": 414px,
+	"phone-large": 425px,
+	"phone-wide": 480px,
+	"phablet": 576px,
+	"tablet-small": 640px,
+	"tablet": 768px,
+	"laptop": 992px,
+	"tablet-wide": 1024px,
+	"desktop": 1200px,
+	"desktop-wide": 1440px,
 );
-@mixin mq($width,
-$type: min) {
-    @if map-has-key($breakpoints,
-    $width) {
-        $width: map-get($breakpoints, $width);
-        @if $type==max {
-            $width: $width - 0.2px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
-    }
+@mixin mq($width, $type: min) {
+	@if map-has-key($breakpoints, $width) {
+		$width: map-get($breakpoints, $width);
+		@if $type==max {
+			$width: $width - 0.2px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
 }
 
 @mixin transition($duration: 0.3s) {
-    transition: all $duration ease-in-out;
+	transition: all $duration ease-in-out;
 }
 
 @mixin list-before() {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    line-height: 1;
-    content: "\f00c";
-    color: $royal_blue;
-    width: 35px;
-    height: 35px;
-    clear: both;
-    font: {
-        style: normal;
-        variant: normal;
-        family: "Font Awesome 5 Free";
-        weight: 600 !important;
-    }
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	line-height: 1;
+	content: "\f00c";
+	color: $royal_blue;
+	width: 35px;
+	height: 35px;
+	clear: both;
+	font: {
+		style: normal;
+		variant: normal;
+		family: "Font Awesome 5 Free";
+		weight: 600 !important;
+	}
 }
 
-@mixin float-top($margin,
-$z-index) {
-    margin: #{$margin} auto 0 auto;
-    z-index: #{$z-index};
+@mixin float-top($margin, $z-index) {
+	margin: #{$margin} auto 0 auto;
+	z-index: #{$z-index};
 }

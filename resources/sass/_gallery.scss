@@ -1,73 +1,113 @@
 #gallery {
-    @include background( ( "image": "section_bg.jpg", "image-path": "section", "size": cover, "position": center, ));
-    .filter {
-        cursor: pointer;
-        background-color: #fff;
-        color: $secondary;
-        padding: 0.5rem 1rem;
-        border-radius: 40px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
-        @include transition(0.1s);
-        &:hover {
-            background-color: $main;
-            color: #fff;
-        }
-        &.active {
-            background-color: $main;
-            color: #fff;
-        }
-    }
-    .img-thumbnail {
-        height: 250px;
-        &.big {
-            height: 500px;
-        }
-    }
-    .card-img-overlay {
-        background-color: rgba(0, 0, 0, 0.3);
-        .card-title {
-            text-shadow: 2px 2px #000;
-        }
-    }
+	@include background(
+		(
+			"image": "section_bg.jpg",
+			"image-path": "section",
+			"size": cover,
+			"position": center,
+		)
+	);
+
+	.filter {
+		cursor: pointer;
+		background-color: #fff;
+		color: $secondary;
+		padding: 0.5rem 1rem;
+		border-radius: 40px;
+		-webkit-border-radius: 40px;
+		-moz-border-radius: 40px;
+		-ms-border-radius: 40px;
+		-o-border-radius: 40px;
+		@include transition(0.1s);
+
+		&:hover {
+			background-color: $main;
+			color: #fff;
+		}
+
+		&.active {
+			background-color: $main;
+			color: #fff;
+		}
+	}
+
+	.img-thumbnail {
+		height: 250px;
+
+		&.big {
+			height: 500px;
+		}
+	}
+
+	.card-img-overlay {
+		background-color: rgba(0, 0, 0, 0.3);
+
+		.card-title {
+			text-shadow: 2px 2px #000;
+		}
+	}
 }
 
 // Below 992px
 @include mq("laptop", "max") {
-    #gallery {
-        @include background( ( "image": "section_bg.jpg", "image-path": "section", "size": cover, "position": center, ));
-        .img-thumbnail {
-            &.big {
-                height: 350px;
-            }
-        }
-    }
+	#gallery {
+		@include background(
+			(
+				"image": "section_bg.jpg",
+				"image-path": "section",
+				"size": cover,
+				"position": center,
+			)
+		);
+
+		.img-thumbnail {
+			&.big {
+				height: 350px;
+			}
+		}
+	}
 }
 
 // Below 768px
 @include mq("tablet", "max") {
-    #gallery {
-        @include background( ( "image": "section_bg.jpg", "image-path": "section", "size": cover, "position": center, ));
-        .img-thumbnail {
-            height: 300px;
-        }
-        &.big {
-            height: 450px;
-        }
-    }
+	#gallery {
+		@include background(
+			(
+				"image": "section_bg.jpg",
+				"image-path": "section",
+				"size": cover,
+				"position": center,
+			)
+		);
+
+		.img-thumbnail {
+			height: 300px;
+		}
+
+		&.big {
+			height: 450px;
+		}
+	}
 }
 
 // Below 425px
 @include mq("phablet", "max") {
-    #gallery {
-        @include background( ( "image": "section_bg.jpg", "image-path": "section", "size": cover, "position": center, ));
-        .img-thumbnail {
-            height: 250px;
-            &.big {
-                height: 500px;
-            }
-        }
-    }
+	#gallery {
+		@include background(
+			(
+				"image": "section_bg.jpg",
+				"image-path": "section",
+				"size": cover,
+				"position": center,
+			)
+		);
+
+		.img-thumbnail {
+			height: 250px;
+
+			&.big {
+				height: 500px;
+			}
+		}
+	}
 }

@@ -1,3 +1,10 @@
 #pricing {
-    @include background( ( "image": "section_bg.jpg", "image-path": "section", "size": cover, "position": center, ));
+	@include background(
+		(
+			"image": "section_bg.jpg",
+			"image-path": "section",
+			"size": cover,
+			"position": center,
+		)
+	);
 }

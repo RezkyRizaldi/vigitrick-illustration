@@ -1,5 +1,4 @@
 /* Utils */
-
 @include utils("bg", "main");
 @include utils("text", "main");
 @include utils("bg", "secondary");
@@ -13,45 +12,49 @@
 @include utils("fw", "700");
 @include utils("fw", "800");
 @include utils("fw", "900");
+
 .circle_sm {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
 }
 
 .circle_padding {
-    padding: 5% 7%;
+	padding: 5% 7%;
 }
 
 // .btn {
-//     &.btn_primary_blue {
-//         color: #fff;
-//         background-color: $primary_blue;
-//         &:hover {
-//             color: $primary_blue;
-//             border-color: $primary_blue;
-//             outline-color: $primary_blue;
-//             background-color: #fff;
-//         }
-//     }
+// 	&.btn_primary_blue {
+// 		color: #fff;
+// 		background-color: $primary_blue;
+//
+// 		&:hover {
+// 			color: $primary_blue;
+// 			border-color: $primary_blue;
+// 			outline-color: $primary_blue;
+// 			background-color: #fff;
+// 		}
+// 	}
 // }
+
 .top {
-    position: fixed;
-    display: none;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 34px;
-    font-size: 16px;
-    bottom: 25px;
-    right: 25px;
-    border: none;
-    outline: none;
-    z-index: 10000;
-    opacity: 0;
-    @include transition();
-    &.show {
-        display: inline;
-        opacity: 1;
-    }
+	position: fixed;
+	display: none;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 16px;
+	bottom: 25px;
+	right: 25px;
+	border: none;
+	outline: none;
+	z-index: 10000;
+	opacity: 0;
+	@include transition();
+
+	&.show {
+		display: inline;
+		opacity: 1;
+	}
 }

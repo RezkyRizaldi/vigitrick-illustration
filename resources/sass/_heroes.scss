@@ -1,111 +1,121 @@
 #heroes {
-    #carousel {
-        .carousel-indicators [data-bs-target] {
-            background-color: $main;
-        }
-        .carousel-inner {
-            .carousel-item {
-                img {
-                    height: 400px;
-                }
-                .container {
-                    .position-absolute {
-                        top: 35%;
-                        z-index: 10000;
-                        .carousel_content {
-                            h1,
-                            p {
-                                text-shadow: 2px 2px #000;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+	#carousel {
+		.carousel-indicators[data-bs-target] {
+			background-color: $main;
+		}
+
+		.carousel-inner {
+			.carousel-item {
+				img {
+					height: 400px;
+				}
+
+				.container {
+					.position-absolute {
+						top: 35%;
+						z-index: 10000;
+
+						.carousel_content {
+							h1,
+							p {
+								text-shadow: 2px 2px #000;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // Below 576px
 @include mq("phablet", "max") {
-    #heroes {
-        #carousel {
-            .carousel-inner {
-                height: 250px;
-                .carousel-item {
-                    height: 250px;
-                    img {
-                        height: 250px;
-                    }
-                    .container {
-                        .position-absolute {
-                            top: 15%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	#heroes {
+		#carousel {
+			.carousel-inner {
+				height: 250px;
+
+				.carousel-item {
+					height: 250px;
+
+					img {
+						height: 250px;
+					}
+
+					.container {
+						.position-absolute {
+							top: 15%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // Below 480px
 @include mq("phone-wide", "max") {
-    #heroes {
-        #carousel {
-            .carousel-inner {
-                .carousel-item {
-                    .container {
-                        .position-absolute {
-                            top: 20%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	#heroes {
+		#carousel {
+			.carousel-inner {
+				.carousel-item {
+					.container {
+						.position-absolute {
+							top: 20%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // Below 425px
 @include mq("phone-large", "max") {
-    #heroes {
-        #carousel {
-            .carousel-inner {
-                height: 200px;
-                .carousel-item {
-                    height: 200px;
-                    img {
-                        height: 200px;
-                    }
-                    .container {
-                        .position-absolute {
-                            top: 15%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	#heroes {
+		#carousel {
+			.carousel-inner {
+				height: 200px;
+
+				.carousel-item {
+					height: 200px;
+
+					img {
+						height: 200px;
+					}
+
+					.container {
+						.position-absolute {
+							top: 15%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // Below 375px
 @include mq("phone-medium", "max") {
-    #heroes {
-        #carousel {
-            .carousel-inner {
-                .carousel-item {
-                    .container {
-                        .position-absolute {
-                            .carousel_content {
-                                h1 {
-                                    font-size: 1.7rem;
-                                }
-                                p {
-                                    font-size: 1.2rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+	#heroes {
+		#carousel {
+			.carousel-inner {
+				.carousel-item {
+					.container {
+						.position-absolute {
+							.carousel_content {
+								h1 {
+									font-size: 1.7rem;
+								}
+
+								p {
+									font-size: 1.2rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

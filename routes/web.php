@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+// 	return view('welcome');
 // });
 
 Route::get("/", [PagesController::class, "index"])->name("home");
+
+Route::fallback(function () {
+	return redirect()->route("home");
+});
