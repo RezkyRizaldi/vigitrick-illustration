@@ -1,6 +1,6 @@
 #heroes {
 	#carousel {
-		.carousel-indicators[data-bs-target] {
+		.carousel-indicators [data-bs-target] {
 			background-color: $main;
 		}
 

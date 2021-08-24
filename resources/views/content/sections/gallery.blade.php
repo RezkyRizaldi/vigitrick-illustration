@@ -36,7 +36,7 @@
 					@foreach ($galleries->skip(1) as $gallery)
 						<div class="col-md-6 col-lg-4 mb-4 filter_item" data-item="{{ $gallery['data_item'] }}" title="{{ $gallery['title'] }}">
 							<div class="card text-light border-0 shadow-lg">
-								<img class="img-thumbnail" src="{{ asset('assets/img/gallery/gallery' . $loop->iteration . '.jpg') }}" class="card-img" alt="{{ $gallery['title'] }}" />
+								<img class="img-thumbnail" src="{{ asset('assets/img/gallery/' . $gallery['img'] . '.jpg') }}" class="card-img" alt="{{ $gallery['title'] }}" />
 								<div class="card-img-overlay">
 									<h5 class="card-title">{{ $gallery["title"] }}</h5>
 									<p class="card-text position-absolute bottom-0 mb-3 p-2 rounded-pill bg_main">{{ $gallery["category"] }}</p>
